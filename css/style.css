@@ -9,8 +9,11 @@
     --filter-bg-color: #DEEBFF;
 }
 
-.fa-solid {
+.blue {
     color: var(--main-color);
+}
+.neutral-star {
+    color: var(--main-bg-color);
 }
 
 body {
@@ -24,10 +27,6 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
-}
-
-main {
-    width: 100%;
 }
 
 header {
@@ -68,6 +67,10 @@ nav {
 .ancreNav {
     color: #060607;
     text-decoration: none;
+}
+
+main {
+    width: 100%;
 }
 
 .section-title {
@@ -129,6 +132,9 @@ nav {
     justify-content: center;
     align-items: center;
 }
+.location > i {
+    color: #060607;
+}
 
 .rechercheBar {
     height: 44px;
@@ -163,6 +169,9 @@ nav {
 
 .loupe {
     display: none;
+}
+.loupe > i {
+    color: white;
 }
 
 /****** Filtres ***********/
@@ -494,13 +503,15 @@ footer {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: flex-start;
+        width: 100%;
     }
 
     .filtresRow {
         margin-bottom: 20px;
+        width: 100%;
     }
     .filtresButton {        
-    width: 170px;
+    width: 47%;
     }
     .rechercheFormInt {
         width: 290px;
@@ -560,4 +571,11 @@ footer {
     footer {
         flex-direction: column;
     }
+}
+
+@media (max-width: 362px) {
+    
+    .filtresButton {   
+        font-size: 0.8em;
+        }
 }
